@@ -5,7 +5,7 @@ Semantic HTML + modern CSS + vanilla JavaScript. No build step, no dependencies.
 
 ## Positioning
 > I design and build AI & machine-learning systems — from deep-learning architectures to scalable
-> big-data analytics — and apply them to hard problems in medicine, neuroscience, and large-scale data.
+> big-data analytics — and apply them to hard problems in medicine, neuroscience, cybersecurity, and large-scale data.
 
 ## Run locally
 Because publication data is embedded in JavaScript, you can simply **open `index.html`** in a browser.
@@ -40,15 +40,13 @@ files/publications/            # publication PDFs (linked from the Publications 
 - All motion respects `prefers-reduced-motion`. WCAG-AA contrast in both themes.
 
 ## Deploy (GitHub Pages)
-1. `git init && git add . && git commit -m "Personal website"`
-2. Push to a GitHub repo (e.g. `mojtaba-hajian.github.io`).
-3. Settings → Pages → deploy from `main` / root.
-4. (Optional) add a custom domain via a `CNAME` file.
+1. Commit your changes (this repo is already initialised).
+2. Create a GitHub repo named **`moj-hajian.github.io`** (a *user site*) and push to it.
+3. Settings → Pages → deploy from `main` / root. Live at `https://moj-hajian.github.io/`.
+4. (Optional) add a custom domain via a `CNAME` file, then update the `canonical` / `og:*` URLs in `index.html`.
 
 ### Social preview image
-The Open Graph image is `assets/img/og-image.svg`. Slack, Discord, Telegram and
-most modern scrapers render SVG, **but LinkedIn and Facebook require a raster
-image**. Before sharing there, export a PNG/JPG (1200×630) — e.g. open the SVG in
-a browser and screenshot it, or `File → Export` from any vector editor — save it
-as `assets/img/og-image.png`, and point the `og:image` / `twitter:image` meta
-tags in `index.html` at the `.png`.
+The Open Graph / Twitter image is **`assets/img/og-image.png`** (1200×630), wired up via the
+`og:image` and `twitter:image` meta tags in `index.html` (absolute URLs, which LinkedIn and
+Facebook require). The editable vector source is `og-image.svg` — if you change it, re-export a
+1200×630 PNG to the same path.
