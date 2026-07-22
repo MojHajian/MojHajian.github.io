@@ -180,26 +180,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .nav__actions { display: flex; align-items: center; gap: .55rem; }
 
-/* CV dropdown */
-.cv-menu { position: relative; }
-.cv-menu__trigger { padding: .55rem 1rem; font-size: .9rem; }
-.cv-menu .chev { font-size: .7rem; transition: transform .2s ease; }
-.cv-menu.is-open .chev { transform: rotate(180deg); }
-.cv-menu__list {
-  position: absolute; right: 0; top: calc(100% + 10px); min-width: 220px;
-  background: var(--surface); border: 1px solid var(--border-strong);
-  border-radius: 14px; padding: .4rem; box-shadow: var(--shadow);
-  opacity: 0; visibility: hidden; transform: translateY(-8px) scale(.98);
-  transition: opacity .18s ease, transform .18s ease, visibility .18s;
+/* profile / contact icons */
+.nav__socials { display: flex; align-items: center; gap: .1rem; }
+.nav__social {
+  width: 38px; height: 38px; border-radius: 10px;
+  display: grid; place-items: center; color: var(--text-dim);
+  transition: color .2s ease, background .2s ease, transform .2s ease;
 }
-.cv-menu.is-open .cv-menu__list { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
-.cv-menu__list a {
-  display: flex; align-items: baseline; gap: .35rem; justify-content: space-between;
-  padding: .6rem .8rem; border-radius: 9px; font-size: .9rem; font-weight: 500; color: var(--text-dim);
-  transition: background .16s ease, color .16s ease;
-}
-.cv-menu__list a span { font-size: .78rem; color: var(--text-mute); }
-.cv-menu__list a:hover { background: var(--surface-2); color: var(--text); }
+.nav__social:hover { color: var(--accent); background: color-mix(in srgb, var(--surface) 60%, transparent); transform: translateY(-2px); }
+.nav__social svg { width: 18px; height: 18px; fill: currentColor; }
 
 /* theme toggle */
 .theme-toggle {
@@ -231,6 +220,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .mobile-menu a { padding: .7rem .4rem; font-weight: 500; color: var(--text-dim); border-bottom: 1px solid var(--border); }
 .mobile-menu a:last-child { border-bottom: none; }
 .mobile-menu.is-open { display: flex; }
+.mobile-menu__socials { display: flex; gap: .5rem; padding-top: 1rem; margin-top: .2rem; }
+.mobile-menu__socials .nav__social {
+  width: 44px; height: 44px; border-radius: 11px;
+  border: 1px solid var(--border-strong); color: var(--text-dim);
+}
+.mobile-menu__socials .nav__social:hover { color: var(--accent); border-color: var(--accent); background: var(--surface-2); }
 
 /* ============================================================
    HERO
@@ -341,6 +336,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .app-card[data-accent="cyan"]::after { background: linear-gradient(var(--c1), #38bdf8); }
 .app-card[data-accent="indigo"]::after { background: linear-gradient(#818cf8, var(--c2)); }
 .app-card[data-accent="violet"]::after { background: linear-gradient(#c084fc, var(--c3)); }
+.app-card[data-accent="emerald"]::after { background: linear-gradient(#6ee7b7, #10b981); }
 .app-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lift); border-color: var(--border-strong); }
 .app-card__top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
 .app-card__tag { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--accent-cyan); }
@@ -511,7 +507,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 @media (max-width: 860px) {
   .nav__links { display: none; }
   .nav__burger { display: flex; }
-  .cv-menu { display: none; }
+  .nav__socials { display: none; }
   .about__grid { grid-template-columns: 1fr; }
   .projects { grid-template-columns: 1fr; }
   .two-col { grid-template-columns: 1fr; }

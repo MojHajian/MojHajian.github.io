@@ -31,27 +31,6 @@
     });
   }
 
-  /* ---------- CV dropdown ---------- */
-  const cvMenu = $("#cvMenu");
-  const cvTrigger = $("#cvTrigger");
-  if (cvMenu && cvTrigger) {
-    const closeCv = () => {
-      cvMenu.classList.remove("is-open");
-      cvTrigger.setAttribute("aria-expanded", "false");
-    };
-    cvTrigger.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const open = cvMenu.classList.toggle("is-open");
-      cvTrigger.setAttribute("aria-expanded", String(open));
-    });
-    document.addEventListener("click", (e) => {
-      if (!cvMenu.contains(e.target)) closeCv();
-    });
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeCv();
-    });
-  }
-
   /* ---------- Mobile menu ---------- */
   const burger = $("#navBurger");
   const mobileMenu = $("#mobileMenu");
