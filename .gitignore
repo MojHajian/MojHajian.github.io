@@ -1,0 +1,15 @@
+# Source materials (kept locally, not part of the deployed site)
+CVs/
+My Publications/
+some of my projects presentation/
+WEBSITE_PLAN.md
+session-backup.md
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+~$*
+.vscode/
+.idea/

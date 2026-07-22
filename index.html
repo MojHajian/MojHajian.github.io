@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mojtaba Hajian — AI/ML Systems Researcher &amp; Engineer</title>
+  <meta name="description" content="Dr. Mojtaba Hajian designs and builds AI and machine-learning systems — from deep-learning architectures to scalable big-data analytics — applied to medicine, neuroscience, and large-scale data." />
+  <meta name="author" content="Mojtaba Hajian" />
+  <meta name="theme-color" content="#0a0b12" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mojtaba Hajian — AI/ML Systems Researcher &amp; Engineer" />
+  <meta property="og:description" content="I design and build AI &amp; machine-learning systems — from deep-learning architectures to scalable big-data analytics — and apply them to hard problems in medicine, neuroscience, and large-scale data." />
+  <meta property="og:image" content="assets/img/og-image.svg" />
+  <meta property="og:url" content="https://mojtaba-hajian.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mojtaba Hajian — AI/ML Systems Researcher &amp; Engineer" />
+  <meta name="twitter:description" content="AI &amp; ML systems, applied to real problems in medicine, neuroscience, and large-scale data." />
+  <meta name="twitter:image" content="assets/img/og-image.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="canonical" href="https://mojtaba-hajian.github.io/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Set theme before paint to avoid flash -->
+  <script>
+    (function () {
+      // Dark-first: only switch to light if the visitor explicitly chose it.
+      try {
+        var t = localStorage.getItem('theme') === 'light' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mojtaba Hajian",
+    "honorificPrefix": "Dr.",
+    "jobTitle": "AI/ML Systems Researcher & Engineer",
+    "email": "mailto:mojtabambb@gmail.com",
+    "affiliation": { "@type": "Organization", "name": "Free University of Bozen-Bolzano" },
+    "alumniOf": ["University of Calabria", "Amirkabir University of Technology", "Babol Noshirvani University of Technology"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Bolzano", "addressCountry": "Italy" },
+    "sameAs": [
+      "https://www.linkedin.com/in/mojtaba-hajian-031846a7/",
+      "https://scholar.google.com/citations?hl=en&user=DYunodoAAAAJ"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand" aria-label="Mojtaba Hajian — home">
+        <span class="nav__brand-mark" aria-hidden="true"></span>
+        <span class="nav__brand-text">Hajian</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#core">Core</a>
+        <a href="#applications">Applications</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <div class="cv-menu" id="cvMenu">
+          <button class="btn btn--ghost cv-menu__trigger" aria-haspopup="true" aria-expanded="false" id="cvTrigger">
+            CV <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="cv-menu__list" role="menu" aria-label="Download CV">
+            <a role="menuitem" href="files/cv/Mojtaba_Hajian_CV_AI-ML.pdf" download>AI / ML <span>— general</span></a>
+            <a role="menuitem" href="files/cv/Mojtaba_Hajian_CV_Medical-AI.pdf" download>Medical AI</a>
+            <a role="menuitem" href="files/cv/Mojtaba_Hajian_CV_Big-Data.pdf" download>Big Data</a>
+            <a role="menuitem" href="files/cv/Mojtaba_Hajian_CV_Neuroscience.pdf" download>Neuroscience</a>
+          </div>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><g><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.5" y1="4.5" x2="6.6" y2="6.6"/><line x1="17.4" y1="17.4" x2="19.5" y2="19.5"/><line x1="4.5" y1="19.5" x2="6.6" y2="17.4"/><line x1="17.4" y1="6.6" x2="19.5" y2="4.5"/></g></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+
+        <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- mobile menu -->
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#core">Core Expertise</a>
+      <a href="#applications">Applications</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow mono reveal">Dr. Mojtaba Hajian &middot; Bolzano, Italy</p>
+        <h1 class="hero__title reveal">
+          <span class="grad-text">AI &amp; ML systems,</span><br />
+          applied to real problems.
+        </h1>
+        <p class="hero__lead reveal">
+          I design and build machine-learning systems — from deep-learning architectures to
+          scalable big-data analytics — and apply them to hard problems in
+          <strong>medicine</strong>, <strong>neuroscience</strong>, and <strong>large-scale data</strong>.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">View Work</a>
+          <a href="#publications" class="btn btn--ghost">Publications</a>
+          <a href="files/cv/Mojtaba_Hajian_CV_AI-ML.pdf" class="btn btn--ghost" download>Download CV</a>
+        </div>
+
+        <ul class="hero__stats reveal" aria-label="Highlights">
+          <li><span class="stat__num" data-count="14">0</span><span class="stat__label">Publications</span></li>
+          <li><span class="stat__num" data-count="4">0</span><span class="stat__label">Research domains</span></li>
+          <li><span class="stat__num" data-count="3">0</span><span class="stat__label">Countries</span></li>
+          <li><span class="stat__num stat__num--text">PhD</span><span class="stat__label">ICT · Big Data</span></li>
+        </ul>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+        <span class="mono">scroll</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index mono">01</span>
+          <h2 class="section__title">About</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__lead reveal">
+            <p>
+              I'm a biomedical-engineer-turned-AI-systems researcher. My work sits where rigorous
+              machine-learning methods meet real scientific and clinical problems — a
+              <strong>PhD in ICT (Big Data Analytics)</strong> layered on top of an
+              <strong>MSc in Biomedical Engineering</strong>.
+            </p>
+            <p>
+              I've built deep-learning architectures (GNNs, Transformers, Multiple-Instance Learning,
+              Mixture-of-Experts), scaled analytics over Spark/Hive/Hadoop, and taken models from
+              messy signals and images to interpretable, leakage-free predictions. Today I'm a
+              <strong>Research Fellow at the Free University of Bozen-Bolzano</strong>, working on
+              AI-driven radiomics for metastatic prostate cancer.
+            </p>
+            <p>
+              The through-line across medicine, neuroscience, and large-scale data is the same:
+              <em>design the right learning system for the structure of the problem, then make its
+              answers trustworthy.</em>
+            </p>
+          </div>
+          <aside class="about__facts reveal">
+            <div class="fact">
+              <span class="fact__k mono">Now</span>
+              <span class="fact__v">Research Fellow, UniBZ — AIRFRAME (Medical AI)</span>
+            </div>
+            <div class="fact">
+              <span class="fact__k mono">Based in</span>
+              <span class="fact__v">Bolzano, Italy</span>
+            </div>
+            <div class="fact">
+              <span class="fact__k mono">PhD</span>
+              <span class="fact__v">ICT · University of Calabria (2025)</span>
+            </div>
+            <div class="fact">
+              <span class="fact__k mono">Focus</span>
+              <span class="fact__v">Deep learning · Scalable ML · Trustworthy AI</span>
+            </div>
+            <div class="fact">
+              <span class="fact__k mono">Languages</span>
+              <span class="fact__v">Python · MATLAB · Java · C#</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CORE EXPERTISE ===================== -->
+    <section class="section section--alt" id="core">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index mono">02</span>
+          <h2 class="section__title">Core Expertise</h2>
+          <p class="section__sub">The methods I build with — the engineering core beneath every application.</p>
+        </div>
+        <div class="cards cards--4">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">◑</div>
+            <h3>Deep Learning Architectures</h3>
+            <p>Graph Neural Networks, Transformers / ViT, Multiple-Instance Learning, Mixture-of-Experts, CNNs, RNN/LSTM, and reinforcement learning — matched to the structure of each problem.</p>
+            <ul class="tags">
+              <li>GNN</li><li>Transformers</li><li>MIL</li><li>MoE</li><li>RL</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">✦</div>
+            <h3>Generative AI &amp; LLMs</h3>
+            <p>Parameter-efficient fine-tuning (QLoRA / LoRA), retrieval-augmented generation, LangChain pipelines, and lightweight deployment with FastAPI.</p>
+            <ul class="tags">
+              <li>QLoRA</li><li>RAG</li><li>LangChain</li><li>FastAPI</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">▦</div>
+            <h3>Scalable &amp; Distributed ML</h3>
+            <p>Large-scale analytics on Spark, Hive, and Hadoop; OLAP data-cube compression and classification; dimensionality reduction over high-dimensional, structured data.</p>
+            <ul class="tags">
+              <li>Spark</li><li>Hive</li><li>Hadoop</li><li>OLAP</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">◈</div>
+            <h3>Trustworthy ML</h3>
+            <p>Explainable AI (SHAP, feature importance), leakage-free validation for small clinical datasets, and reproducible pipelines with Git, Docker, and Linux.</p>
+            <ul class="tags">
+              <li>XAI / SHAP</li><li>Leakage-free CV</li><li>Docker</li><li>Reproducible</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== APPLICATIONS ===================== -->
+    <section class="section" id="applications">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index mono">03</span>
+          <h2 class="section__title">Applications</h2>
+          <p class="section__sub">Where these systems create impact — three domains, one methodological core.</p>
+        </div>
+        <div class="cards cards--3">
+          <article class="app-card reveal" data-accent="cyan">
+            <div class="app-card__top">
+              <span class="app-card__tag mono">Medical AI &amp; Oncology</span>
+              <span class="app-card__num mono">01</span>
+            </div>
+            <h3>Radiomics for cancer therapy response</h3>
+            <p>
+              PSMA PET/CT radiomics for metastatic castration-resistant prostate cancer (AIRFRAME):
+              predicting therapy outcome and survival with attention-MIL, mixture-of-experts, and
+              patient-graph models — plus explainable outputs clinicians can read.
+            </p>
+            <ul class="tags">
+              <li>PyRadiomics</li><li>SimpleITK</li><li>nnU-Net</li><li>PET/CT</li>
+            </ul>
+          </article>
+          <article class="app-card reveal" data-accent="indigo">
+            <div class="app-card__top">
+              <span class="app-card__tag mono">Computational Neuroscience</span>
+              <span class="app-card__num mono">02</span>
+            </div>
+            <h3>Decoding the brain from EEG</h3>
+            <p>
+              EEG/ERP, connectivity and time–frequency analysis; machine learning for depression
+              quantification and cognitive-state decoding. Led the EEG signal-processing unit at
+              Iran's National Brain Mapping Lab.
+            </p>
+            <ul class="tags">
+              <li>EEGLAB / MNE</li><li>Connectivity</li><li>ERP</li><li>ViT on EEG</li>
+            </ul>
+          </article>
+          <article class="app-card reveal" data-accent="violet">
+            <div class="app-card__top">
+              <span class="app-card__tag mono">Big Data &amp; Decision Systems</span>
+              <span class="app-card__num mono">03</span>
+            </div>
+            <h3>Analytics at scale</h3>
+            <p>
+              OLAP data-cube compression and classification; predictive analytics over open transport
+              data; distributed benchmarking (TPC-H) on Spark/Hive/Hadoop — turning massive
+              multidimensional data into fast, reliable decisions.
+            </p>
+            <ul class="tags">
+              <li>OLAP cubes</li><li>Bayesian networks</li><li>TPC-H</li><li>Distributed</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED PROJECTS ===================== -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index mono">04</span>
+          <h2 class="section__title">Featured Projects</h2>
+          <p class="section__sub">A curated cross-section — modern GenAI, cutting-edge medical DL, neuroscience, and big-data systems.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project__meta">
+              <span class="chip chip--cyan mono">Medical AI</span>
+              <span class="chip chip--live mono">Current</span>
+            </div>
+            <h3>AIRFRAME — Prostate-cancer therapy-response prediction</h3>
+            <p>
+              Predicting Responder vs. Non-Responder in metastatic prostate cancer from lesion-level
+              PSMA-PET radiomics, accounting for intra-patient tumor heterogeneity. Three complementary
+              architectures: a <strong>hybrid Attention-MIL</strong> model fusing radiomics + clinical
+              data, a <strong>Mixture-of-Experts MIL</strong> that discovers lesion phenotypes via
+              clustering, and <strong>patient-graph GNNs</strong> that model relationships between lesions.
+            </p>
+            <ul class="tags">
+              <li>Attention-MIL</li><li>Mixture-of-Experts</li><li>GNN (PyG)</li><li>PyRadiomics</li><li>Patient-level CV</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__meta">
+              <span class="chip chip--violet mono">Generative AI</span>
+            </div>
+            <h3>LLM fine-tuning — QLoRA on Llama 3.2 for math reasoning</h3>
+            <p>
+              Parameter-efficient fine-tuning of Llama 3.2 (1B) on GSM8K grade-school math problems:
+              chat-format data prep, <strong>QLoRA</strong> adapters, and an exact-match evaluation
+              harness — served as a usable model through a <strong>FastAPI</strong> inference endpoint.
+              End-to-end GenAI + MLOps.
+            </p>
+            <ul class="tags">
+              <li>QLoRA / LoRA</li><li>Llama 3.2</li><li>GSM8K</li><li>FastAPI</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__meta">
+              <span class="chip chip--indigo mono">Neuroscience</span>
+              <span class="chip mono">In progress</span>
+            </div>
+            <h3>EEG suspense decoding — Vision Transformer pipeline</h3>
+            <p>
+              Classifying pre- vs. post-suspense brain states from movie EEG. A <strong>Vision
+              Transformer</strong> (vit_base_patch16_224, adapted to 5-channel connectivity images)
+              fine-tuned against a rigorous classical-ML baseline — a <code>StandardScaler → SelectKBest →
+              PCA</code> pipeline with <code>GridSearchCV</code> over SVM, RF, XGBoost, KNN, and MLP using
+              StratifiedGroupKFold to prevent subject leakage.
+            </p>
+            <ul class="tags">
+              <li>Vision Transformer</li><li>timm / PyTorch</li><li>EEG connectivity</li><li>GridSearchCV</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__meta">
+              <span class="chip chip--indigo mono">Neuroscience</span>
+              <span class="chip mono">MSc thesis</span>
+            </div>
+            <h3>EEG depression quantification — a continuous Beck-aligned index</h3>
+            <p>
+              An objective depression index from 19-channel EEG across 75 patients: RQA and nonlinear
+              features, t-SNE reduction, a fuzzy classifier with Dempster–Shafer channel fusion, and MARS
+              regression onto the Beck Depression Inventory — reaching <strong>0.92 Pearson correlation</strong>
+              (5% PRD) with the clinical index.
+            </p>
+            <ul class="tags">
+              <li>Fuzzy / NN</li><li>RQA features</li><li>t-SNE</li><li>Dempster–Shafer</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__meta">
+              <span class="chip chip--violet mono">Big Data</span>
+              <span class="chip mono">ICEIS 2024</span>
+            </div>
+            <h3>ClassCube — classifying big OLAP data cubes</h3>
+            <p>
+              A framework that classifies high-dimensional OLAP cubes after PCA / dimension-selection into
+              a reduced cuboid lattice. The headline result: <strong>4D reduced models match ~6D accuracy</strong>
+              at a fraction of the compute — mitigating the curse of dimensionality and enabling cloud-scale,
+              near-real-time analytics.
+            </p>
+            <ul class="tags">
+              <li>OLAP</li><li>PCA</li><li>Cuboid lattice</li><li>SVM / LogReg</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__meta">
+              <span class="chip chip--violet mono">Big Data</span>
+              <span class="chip mono">IEEE CBDCom 2022</span>
+            </div>
+            <h3>Bayesian-network transportation analytics</h3>
+            <p>
+              Predicting bus-arrival delays from open <strong>GTFS</strong> transit data with Bayesian
+              networks over (stop, route, arrival-time) triplets. Different network topologies (serial,
+              diamond) capture conditional dependencies, with a <strong>~93.7% best-configuration</strong>
+              occurrence at a ~1% relative-error target.
+            </p>
+            <ul class="tags">
+              <li>Bayesian networks</li><li>GTFS</li><li>Probabilistic inference</li><li>Open data</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- expandable more -->
+        <div class="more" id="moreProjects" hidden>
+          <div class="projects projects--compact">
+            <article class="project project--sm reveal">
+              <div class="project__meta"><span class="chip chip--violet mono">Big Data</span><span class="chip mono">IEEE Big Data 2024</span></div>
+              <h3>MALAGA — multidimensional analytics over massive graphs</h3>
+              <p>Big-data analytics framework for OLAP-style querying over massive graph data.</p>
+              <ul class="tags"><li>Graph analytics</li><li>OLAP</li></ul>
+            </article>
+            <article class="project project--sm reveal">
+              <div class="project__meta"><span class="chip chip--indigo mono">Neuroscience</span></div>
+              <h3>Parkinson's EEG — transfer learning on connectivity images</h3>
+              <p>3-class classification of EEG connectivity matrices as images with ResNet50 &amp; VGG16 (ImageNet transfer learning), tackling class imbalance and fine-tuning strategies.</p>
+              <ul class="tags"><li>ResNet50</li><li>VGG16</li><li>Transfer learning</li></ul>
+            </article>
+            <article class="project project--sm reveal">
+              <div class="project__meta"><span class="chip chip--cyan mono">Core ML</span></div>
+              <h3>Cora — GNN node classification</h3>
+              <p>Graph Convolutional Network on the Cora citation network (DGL), classifying publications from features + citation structure.</p>
+              <ul class="tags"><li>GCN</li><li>DGL</li></ul>
+            </article>
+            <article class="project project--sm reveal">
+              <div class="project__meta"><span class="chip chip--cyan mono">Core ML</span></div>
+              <h3>CartPole — Deep Q-Learning agent</h3>
+              <p>DQN with target network, replay buffer, and epsilon-greedy exploration solving the classic control task in Gymnasium.</p>
+              <ul class="tags"><li>DQN</li><li>Reinforcement learning</li></ul>
+            </article>
+            <article class="project project--sm reveal">
+              <div class="project__meta"><span class="chip chip--violet mono">Big Data</span><span class="chip mono">CBDCom 2023</span></div>
+              <h3>NMF trace sequences — probabilistic clustering validation</h3>
+              <p>A theoretical framework validating the optimal number of clusters via NMF trace sequences that converge to a Gamma distribution — a Bayesian view on cluster validity.</p>
+              <ul class="tags"><li>NMF</li><li>Clustering validity</li></ul>
+            </article>
+          </div>
+        </div>
+        <div class="more__toggle-wrap reveal">
+          <button class="btn btn--ghost" id="moreToggle" aria-expanded="false" aria-controls="moreProjects">
+            Show more projects
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index mono">05</span>
+          <h2 class="section__title">Publications</h2>
+          <p class="section__sub">Peer-reviewed work across big-data systems, medical AI, and neuroscience. Bold = my name.</p>
+        </div>
+
+        <div class="pub-filters reveal" role="tablist" aria-label="Filter publications by theme">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="bigdata" role="tab" aria-selected="false">Big Data</button>
+          <button class="filter" data-filter="medical" role="tab" aria-selected="false">Medical AI</button>
+          <button class="filter" data-filter="neuro" role="tab" aria-selected="false">Neuroscience</button>
+        </div>
+
+        <ol class="pub-list" id="pubList" aria-live="polite">
+          <!-- rendered by publications.js -->
+        </ol>
+        <p class="pub-empty" id="pubEmpty" hidden>No publications in this category.</p>
+
+        <div class="pub-foot reveal">
+          <a class="btn btn--ghost" href="https://scholar.google.com/citations?hl=en&user=DYunodoAAAAJ" target="_blank" rel="noopener">
+            View all on Google Scholar ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index mono">06</span>
+          <h2 class="section__title">Experience &amp; Education</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-item__dot" aria-hidden="true"></div>
+            <div class="tl-item__body">
+              <span class="tl-item__date mono">Jun 2025 — present</span>
+              <h3>Research Fellow — Free University of Bozen-Bolzano</h3>
+              <p class="tl-item__org">Faculty of Engineering · Bolzano, Italy</p>
+              <p>AI-driven radiomics for metastatic castration-resistant prostate cancer (AIRFRAME): multimodal PET/CT modeling, end-to-end PyRadiomics/SimpleITK pipelines, and explainable-AI outputs for clinicians.</p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-item__dot" aria-hidden="true"></div>
+            <div class="tl-item__body">
+              <span class="tl-item__date mono">Jan 2022 — Mar 2025</span>
+              <h3>PhD Candidate — University of Calabria</h3>
+              <p class="tl-item__org">DIMES · Italy · Advisor: Prof. Alfredo Cuzzocrea</p>
+              <p>Unsupervised learning over high-dimensional data and large-scale analytics on Spark/Hive/Hadoop. Dissertation: <em>Multidimensional Big Data Analytics for Knowledge Discovering and Analysis from Big Web Knowledge Bases.</em></p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-item__dot" aria-hidden="true"></div>
+            <div class="tl-item__body">
+              <span class="tl-item__date mono">Jun 2023 — Dec 2023</span>
+              <h3>Research Intern — ESEO</h3>
+              <p class="tl-item__org">École d'ingénieurs · France</p>
+              <p>Deployed a big-data stack (Hadoop, Hive, Spark), built a TPC-H benchmark database, and ran machine-learning algorithms over big OLAP data cubes.</p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-item__dot" aria-hidden="true"></div>
+            <div class="tl-item__body">
+              <span class="tl-item__date mono">Apr 2019 — Jan 2022</span>
+              <h3>Signal Processing Specialist &amp; Head of EEG Unit — NBML</h3>
+              <p class="tl-item__org">National Brain Mapping Laboratory · Iran</p>
+              <p>Led the EEG signal-processing unit: designed protocols and analysis pipelines (EEGLAB/MNE), ran ERP / time–frequency / connectivity analyses, trained ML classifiers, and managed EEG-VR, EEG-fNIRS, and EEG-TMS recordings.</p>
+            </div>
+          </div>
+
+          <div class="tl-item tl-item--edu reveal">
+            <div class="tl-item__dot" aria-hidden="true"></div>
+            <div class="tl-item__body">
+              <span class="tl-item__date mono">2025 · Education</span>
+              <h3>PhD, Information &amp; Communication Technology</h3>
+              <p class="tl-item__org">University of Calabria, Italy</p>
+            </div>
+          </div>
+          <div class="tl-item tl-item--edu reveal">
+            <div class="tl-item__dot" aria-hidden="true"></div>
+            <div class="tl-item__body">
+              <span class="tl-item__date mono">2017 · Education</span>
+              <h3>MSc, Biomedical Engineering</h3>
+              <p class="tl-item__org">Amirkabir University of Technology, Iran · Thesis: EEG-based depression quantification</p>
+            </div>
+          </div>
+          <div class="tl-item tl-item--edu reveal">
+            <div class="tl-item__dot" aria-hidden="true"></div>
+            <div class="tl-item__body">
+              <span class="tl-item__date mono">2014 · Education</span>
+              <h3>BSc, Electronics Engineering</h3>
+              <p class="tl-item__org">Babol Noshirvani University of Technology, Iran</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index mono">07</span>
+          <h2 class="section__title">Skills &amp; Stack</h2>
+        </div>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3 class="mono">Languages</h3>
+            <ul class="tags"><li>Python</li><li>MATLAB</li><li>Java</li><li>C#</li><li>SQL</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="mono">ML / Deep Learning</h3>
+            <ul class="tags"><li>PyTorch</li><li>TensorFlow / Keras</li><li>scikit-learn</li><li>PyTorch Geometric</li><li>timm</li><li>XGBoost</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="mono">Data / Systems</h3>
+            <ul class="tags"><li>Spark</li><li>Hive</li><li>Hadoop</li><li>PostgreSQL</li><li>AWS</li><li>GCP</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="mono">Generative AI</h3>
+            <ul class="tags"><li>LLaMA</li><li>QLoRA / LoRA</li><li>LangChain</li><li>RAG</li><li>FastAPI</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="mono">Medical &amp; Signals</h3>
+            <ul class="tags"><li>PyRadiomics</li><li>SimpleITK</li><li>nnU-Net</li><li>EEGLAB</li><li>MNE</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="mono">Workflow</h3>
+            <ul class="tags"><li>Git</li><li>Linux</li><li>Docker</li><li>SHAP / XAI</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TEACHING & AWARDS ===================== -->
+    <section class="section section--alt" id="teaching">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index mono">08</span>
+          <h2 class="section__title">Teaching &amp; Recognition</h2>
+        </div>
+        <div class="two-col">
+          <div class="reveal">
+            <h3 class="minihead mono">Teaching &amp; Knowledge Transfer</h3>
+            <ul class="listy">
+              <li><strong>Paracelsus Medical University (Salzburg)</strong> — knowledge-transfer workshop for medical-physics experts: lesion segmentation, radiomics feature extraction, and ML for small datasets. <span class="muted">2025</span></li>
+              <li><strong>Instructor, 50+ EEG trainees</strong> — EEG data analysis &amp; recording internship course, NBML. <span class="muted">2019–2021</span></li>
+              <li><strong>Webinar &amp; workshops</strong> — ML for biomedical signal processing; EEG recording, processing &amp; analysis. <span class="muted">NBML, 2020–2021</span></li>
+            </ul>
+          </div>
+          <div class="reveal">
+            <h3 class="minihead mono">Awards &amp; Service</h3>
+            <ul class="listy">
+              <li><strong>Reviewer</strong> — <em>IEEE Big Data</em> conference &amp; <em>Frontiers in Biomedical Technologies</em>.</li>
+              <li><strong>Team Leader Award</strong> — MRI-compatible electronic response grips, NBML. <span class="muted">2020</span></li>
+              <li><strong>Commendation</strong> — establishing the EEG setup for sleep services, NBML. <span class="muted">2020</span></li>
+              <li><strong>2nd place</strong> — Smart City Startup Weekend (MOPEC). <span class="muted">2017</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__text reveal">
+            <span class="section__index mono">09</span>
+            <h2 class="section__title">Let's build something.</h2>
+            <p>
+              Open to research collaborations, postdoc &amp; faculty conversations, and ML / data-science
+              roles in industry. The fastest way to reach me is email.
+            </p>
+          </div>
+          <div class="contact__links reveal">
+            <a class="contact-link" href="mailto:mojtabambb@gmail.com">
+              <span class="contact-link__k mono">Email</span>
+              <span class="contact-link__v">mojtabambb@gmail.com</span>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/mojtaba-hajian-031846a7/" target="_blank" rel="noopener">
+              <span class="contact-link__k mono">LinkedIn</span>
+              <span class="contact-link__v">in/mojtaba-hajian ↗</span>
+            </a>
+            <a class="contact-link" href="https://scholar.google.com/citations?hl=en&user=DYunodoAAAAJ" target="_blank" rel="noopener">
+              <span class="contact-link__k mono">Google Scholar</span>
+              <span class="contact-link__v">Publications &amp; citations ↗</span>
+            </a>
+            <a class="contact-link" href="files/cv/Mojtaba_Hajian_CV_AI-ML.pdf" download>
+              <span class="contact-link__k mono">Curriculum Vitae</span>
+              <span class="contact-link__v">Download PDF ↓</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year">2026</span> Mojtaba Hajian</span>
+      <span class="footer__built mono">Built with semantic HTML, CSS &amp; vanilla JS</span>
+      <a href="#hero" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/publications.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
